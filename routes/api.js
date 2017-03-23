@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const Note = require('../models/note');
 /**
  * GET list of notes
  */
@@ -12,7 +12,12 @@ router.get("/notes", function(req, res){
  * ADD a new note to the database 
  */
 router.post("/notes", function(req, res){
-    res.send({type: "POST"});
+    //var note = new Note(req.body);
+    //note.save();
+    // create new instance and save it to the database
+    Note.create(req.body).then(function(note){
+        res.send(note);
+    });
 })
 
 /**
