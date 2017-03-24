@@ -26,10 +26,10 @@ nodemon index
 
 ## Dependencies
 
-- [expressjs] : Node js web application that serve for handling HTTP requests
-- [mongoose] : MongoDB object modeling tool that serve for modeling and mapping MongoBD data to javascript
-- [bodyparser] : Node.js body parsing middleware that serve to parse body requests
-- [nodemon]: Watch any change in the node js app and restart automatically the server - used for development
+- [expressjs](https://github.com/expressjs/express) : Node js web application that serve for handling HTTP requests
+- [mongoose](https://github.com/Automattic/mongoose) : MongoDB object modeling tool that serve for modeling and mapping MongoBD data to javascript
+- [bodyparser](https://github.com/expressjs/body-parser) : Node.js body parsing middleware that serve to parse body requests
+- [nodemon](https://github.com/remy/nodemon) : Watch any change in the node js app and restart automatically the server - used for development
 
 ## Application Structure
 
