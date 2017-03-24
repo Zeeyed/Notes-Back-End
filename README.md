@@ -4,16 +4,23 @@
 # Getting started
 
 ## Clone the repository
-`git clone git@github.com:Zeeyed/Notes-Back-End.git`
+```sh
+git clone git@github.com:Zeeyed/Notes-Back-End.git
+```
 
 ## Install nodemon globally
-`npm install nodemon -g`
-
+```sh
+npm install nodemon -g
+```
 ## Install all dependecies
-`npm install`
+```sh
+npm install
+```
 
 ## Start the local server
-`nodemon index`
+```sh
+nodemon index
+```
 
 # Code overview
 
