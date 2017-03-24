@@ -31,7 +31,9 @@ router.put("/notes/:id", function(req, res, next){
  * DELETE a note from the database
  */
 router.delete("/notes/:id", function(req, res, next){
-    res.send({type: "DELETE"});
+    Note.findByIdAndRemove({_id: req.params.id}).then(function(note){
+        res.send(note);
+    });
 });
 
 module.exports = router;
