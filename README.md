@@ -1,5 +1,5 @@
 # Note Back End
-> Note back end is a REST API build to provide CRUD operations to the Note app
+> Note back end is a RESTful API build to provide CRUD operations to the Note app using Node.js, Express and MongoDB.
 
 # Getting started
 
