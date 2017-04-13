@@ -38,7 +38,9 @@ router.put("/notes/:id", function(req, res, next){
     Note.update(condition, req.body)
     .then(note => {
         if(!note) { return res.status(404).end(); }
-        return res.status(200).send(note);
+        Note.findOne(condition).then((updatedNote) => {
+            res.status(200).send(updatedNote)
+        })
     })
     .catch(err => next(err));
 })
